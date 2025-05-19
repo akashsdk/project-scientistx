@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 
-import Img1 from "../../../public/image 29.png";
+import emon from "../../../public/Screenshot 2025-05-20 at 2.53.49 AM.png";
 import nahid from "../../../public/nahid.jpg";
 import akash from "../../../public/Akash Profile.jpg";
 
@@ -78,12 +78,19 @@ function page() {
       </div>
 
       <div className=" grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2  gap-4">
-        <AboutCart
+        {/* <AboutCart
           img={require("../../../public/monju.jpeg")}
           name="Monjurul Islam"
           post="Chief Executing Officer"
           email="monjurul@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
+        /> */}
+        <AboutCart onClick={() => window.open("https://tasnim-s-akash.web.app/", "_blank")}
+          img={akash}
+          name="Tasnim Shahriar Akash"
+          post="Managing Director (MD)"
+          email="akash@scientistx.tech"
+          text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
         />
         <AboutCart
           onClick={() =>
@@ -91,11 +98,11 @@ function page() {
           }
           img={nahid}
           name="Md. Nahiduzzaman"
-          post="Chief Technology Officer(CTO)"
+          post="Chief Executing Officer (CEO)"
           email="nahid@scientistx.tech"
           text="Cultivate diligence as a routine, and life will blossom with beauty"
         />
-        <AboutCart onClick={()=>window.open("https://sazzad-19.web.app","_blank")}
+        <AboutCart onClick={() => window.open("https://sazzad-19.web.app", "_blank")}
           img={require("../../../public/myimage.jpg")}
           name="MD SAZZAD HOSSAIN"
           post="Head Of Training and Development"
@@ -109,15 +116,18 @@ function page() {
           email="saibur@scientistx.tech"
           text="Life is full of beautiful journey if you can handle your emotions"
         /> */}
-        <AboutCart onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
-          img={akash}
-          name="Tasnim Shahriar Akash"
-          post="Managing Director (MD)"
-          email="akash@scientistx.tech"
-          text="Pioneering solutions, where innovation meets excellence. Transforming ideas into powerful software for a brighter future."
+
+        <AboutCart
+
+          img={emon}
+          name="Md Jannatul Ferdous Emon"
+          post="Senior Accountant"
+          email="emon@scientistx.tech"
+          text="Life is full of beautiful journey if you can handle your emotions"
         />
-        <AboutCart 
-        //onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
+
+        <AboutCart
+          //onClick={()=>window.open("https://my-portfolio-d43ec.web.app/","_blank")}
           //img={akash}
           name="Rana Mirja"
           post="Head of Marketing"
